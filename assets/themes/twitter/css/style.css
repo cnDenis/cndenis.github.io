@@ -31,15 +31,20 @@
 
 .post-full .author {
   font-size: 120%;
-  font-weight: bold; }
-
-.post-full .email {
+  font-weight: bold;
   margin: 8px;
-  font-style: italic;
-  background-color: #CCFFFF
+}
+
+.post-full .link {
+  margin: 8px;
 }
 
 .post-full .date {
+  margin: 8px;
+  font-weight: bold; }
+
+.post-full .update {
+  margin: 8px;
   font-weight: bold; }
 
 /* tag_box */

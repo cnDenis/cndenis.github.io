@@ -6,8 +6,11 @@
   <div class="span12">
     <div class="info">
       <span class="author">{{ site.author.name }}</span>
-      <span class="email"><code>{{ site.author.email }}</code></span>
+      <span class="link"> <a href="{{page.url}}">{{site.production_url}}</a></span>
       <span class="date">{{ page.date | date: "%Y-%m-%d"}}</span>
+      {% if page.update %}
+      <span class="update">(update:{{ page.update | date: "%Y-%m-%d" }})</span>
+      {% endif %}
     </div>
     <div class="content">
       {{ content }}

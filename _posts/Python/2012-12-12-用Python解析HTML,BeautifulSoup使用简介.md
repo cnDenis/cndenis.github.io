@@ -6,7 +6,10 @@ tags : [Python, BeautifulSoup]
 title: 用Python解析HTML，BeautifulSoup使用简介
 ---
 
-Beautiful Soup，字面意思是美好的汤，是一个用于解析HTML文件的Python库。主页在 <http://www.crummy.com/software/BeautifulSoup/> ， 下载与安装无需啰嗦，这里就介绍一下它的使用吧。
+Beautiful Soup是一个用于解析HTML文件的Python库，这里介绍一下它的基本使用方法。
+
+Beautiful Soup字面意思是美好的汤，主页在 <http://www.crummy.com/software/BeautifulSoup/>，
+下载与安装无需啰嗦，假设你已经装好了，现在开始吧。
 
 -------------
 
@@ -81,9 +84,11 @@ text做为键时表示查找按标签中的文本查找，如 `tag(text=somethin
 
 * 函数：  当以上方法都行不通时，函数是终极方法。写一个以单个标签为参数的函数，传入 `find` 或 `find_all` 进行查找。如
 
-        def fun(tag):
-            return tag.has_key("class") and not tag.has_key("id")
-        tag(fun) # 会返回所有带class属性但不带id属性的标签
+```python
+    def fun(tag):
+        return tag.has_key("class") and not tag.has_key("id")
+    tag(fun) # 会返回所有带class属性但不带id属性的标签
+```
 
 ------------
 

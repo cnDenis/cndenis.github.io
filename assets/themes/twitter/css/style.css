@@ -23,6 +23,24 @@
   margin: 10px 0;
   text-align: left; }
 
+/* 主页 */
+.post-list li {
+  margin-top: 2em;
+}
+.post-list .excerpt {
+  margin-top: 0px;
+  margin-left: 2em;
+  text-align: justify;
+}
+.post-list .title {
+  margin: 2px;
+  font-family: 微软雅黑,黑体;
+  color: black;
+}
+.post-list .date {
+  margin: 0px;
+  color: #6699FF;
+}
 /* post-full*/
 .post-full .info {
   margin-bottom: 20px;
@@ -46,6 +64,10 @@
 .post-full .update {
   margin: 8px;
   font-weight: bold; }
+
+.post-full p{
+  text-align: justify;
+}
 
 /* tag_box */
 .tag_box {

@@ -111,51 +111,111 @@
 
 <div class="row-fluid">
   <div class="span12">
-    <ul class="posts">
+    <ul class="post-list">
   
-    <li>
-        <span>2013-04-26</span>
-         &raquo; <a href="/erlang/2013/04/26/Erlang%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%AD%90%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%B2">Erlang中的原子、字符串和二进制串</a>
-        <p><p>Erlang中的原子（Atom）, 字符串（String）和二进制串（Binary）是有点容易让人糊涂
+    <li><hr>
+        <span class='date'>2013-08-01</span>&raquo; <h3 class='title'><a href="/erlang/2013/08/01/Erlang%E7%9A%84%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5">Erlang的静态代码检查</a></h3>
+        <div class='excerpt'><p>Dialyzer是Erlang的静态代码检查程序, 可以发现函数调用时的类型错误之类的问题,
+以及被调用的函数不存在或未导出的问题. 最实用的是在上传代码到SVN后,
+检查是否漏传模块. 因为漏传的话, 编译不会报错, 但运行时会出undef错误,
+从SVN上检出一份全新的代码, 用Dialyzer查一下, 漏的马上可以发现.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-04-27</span>&raquo; <h3 class='title'><a href="/erlang/2013/04/27/Erlang%E4%B8%AD%E7%9A%84%E9%95%BF%E5%BA%A6">Erlang中的长度</a></h3>
+        <div class='excerpt'><p>值得吐槽的是居然连求长度这么基础的方法，Erlang都没有统一起来。
+分为len和size两大对立阵营：</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-04-26</span>&raquo; <h3 class='title'><a href="/erlang/2013/04/26/Erlang%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%AD%90%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%B2">Erlang中的原子、字符串和二进制串</a></h3>
+        <div class='excerpt'><p>Erlang中的原子（Atom）, 字符串（String）和二进制串（Binary）是有点容易让人糊涂
 的东西, 这里归纳一下它们之间的区别与联系。</p>
-</p>
+</div>
     </li>
   
-    <li>
-        <span>2013-01-25</span>
-         &raquo; <a href="/tools/2013/01/25/%E6%88%91%E7%9A%84Sublime_Text_2%E9%85%8D%E7%BD%AE">我的 Sublime Text2 配置</a>
-        <p><p>Sublime Text 2是最近很火的一个代码编辑器，我也跟风玩了一下，果然很好用。方便的插件管理器加上丰富的插件，可以很容易把它调教得很顺手。几乎每项功能都可以用鼠标和键盘两种方式来实现，方便各种习惯的人。Sublime Text 2 的介绍与推荐网上已经有很多，这里记一下我安装的包和配置。</p>
-</p>
+    <li><hr>
+        <span class='date'>2013-04-24</span>&raquo; <h3 class='title'><a href="/erlang/2013/04/24/gen_server%E7%AC%94%E8%AE%B0">gen_server笔记</a></h3>
+        <div class='excerpt'><p>gen_server是erlang的OTP框架中最常用的“行为模式”了吧，至少几本erlang教材都是首
+先介绍这个。</p>
+</div>
     </li>
   
-    <li>
-        <span>2012-12-26</span>
-         &raquo; <a href="/python/2012/12/26/Python3.x%E4%B8%AD%E7%9A%84nonlocal%E5%8F%8A%E5%85%B6%E5%9C%A82.x%E4%B8%AD%E7%9A%84%E5%8F%98%E9%80%9A%E5%8A%9E%E6%B3%95">Python 3.x中的nonlocal及其在2.x中的变通办法</a>
-        <p><p>在Python 2.x中，函数内部可以定义函数，内层的函数可以读取外层函数的局部变量，但却不可以修改它.</p>
-</p>
+    <li><hr>
+        <span class='date'>2013-03-24</span>&raquo; <h3 class='title'><a href="/erlang/2013/03/24/%E5%88%9D%E8%AF%86Erlang_Hello_World_4">初识Erlang，Hello World（4）</a></h3>
+        <div class='excerpt'><p>前几节的Hello world都是自言自语，今天试试对着别人说。首先是在本机上各个进程之间，
+然后是在网络上不同机器之间。</p>
+</div>
     </li>
   
-    <li>
-        <span>2012-12-18</span>
-         &raquo; <a href="/python/2012/12/18/%E5%9C%A8Windows%E4%B8%8B%E5%AE%89%E8%A3%85pygraphviz">在Windows下安装pygraphviz</a>
-        <p><p>用 pip 或是 easy_install 在Windows 下安装 pygraphviz，
+    <li><hr>
+        <span class='date'>2013-03-15</span>&raquo; <h3 class='title'><a href="/erlang/2013/03/15/%E5%88%9D%E8%AF%86Erlang_Hello_World_3">初识Erlang，Hello World（3）</a></h3>
+        <div class='excerpt'><p>今天不只要对World说Hello，还要对别人说Hello</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-03-12</span>&raquo; <h3 class='title'><a href="/erlang/2013/03/12/%E5%88%9D%E8%AF%86Erlang_Hello_World-2">初识Erlang，Hello World (2)</a></h3>
+        <div class='excerpt'><p>昨天费了老大劲终于把Hello World打出来了，今天我们继续。</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-03-12</span>&raquo; <h3 class='title'><a href="/erlang/2013/03/12/%E5%88%9D%E8%AF%86Erlang_Hello_World">初识Erlang，Hello World (1)</a></h3>
+        <div class='excerpt'><p>这两天开始玩Erlang，咱们从Hello World开始吧。</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-01-25</span>&raquo; <h3 class='title'><a href="/tools/2013/01/25/%E6%88%91%E7%9A%84Sublime_Text_2%E9%85%8D%E7%BD%AE">我的 Sublime Text2 配置</a></h3>
+        <div class='excerpt'><p>Sublime Text 2是最近很火的一个代码编辑器，我也跟风玩了一下，果然很好用。方便的插件管理器加上丰富的插件，可以很容易把它调教得很顺手。几乎每项功能都可以用鼠标和键盘两种方式来实现，方便各种习惯的人。Sublime Text 2 的介绍与推荐网上已经有很多，这里记一下我安装的包和配置。</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-01-16</span>&raquo; <h3 class='title'><a href="/python/2013/01/16/Python2.x%E4%B8%AD%E6%94%AF%E6%8C%81unicode%E7%9A%84configparser">Python2.x中支持unicode的configparser</a></h3>
+        <div class='excerpt'><p>Python2.x中许多内置模块不支持unicode，确实是很烦的事。configparser就是其中之一。</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-01-14</span>&raquo; <h3 class='title'><a href="/tools/2013/01/14/%E8%A7%A3%E5%86%B3Ulipad%E5%92%8C%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E5%86%B2%E7%AA%81%E7%9A%84%E9%97%AE%E9%A2%98">解决Ulipad和有道词典冲突的问题</a></h3>
+        <div class='excerpt'><p>Ulipad和目前版本的有道词典有冲突，表现为先开有道词典，Ulipad就无法运行。</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2012-12-27</span>&raquo; <h3 class='title'><a href="/python/2012/12/27/%E5%88%A9%E7%94%A8tkFileDialog.askopenfilenames%E8%8E%B7%E5%8F%96%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E5%90%8D">利用tkFileDialog.askopenfilenames获取多个文件名</a></h3>
+        <div class='excerpt'><p>用Python写小脚本，要选择文件，最简单的方式莫过于使用内置的Tk的控件了。如果需要同时选择多个文件，可以使用<code>tkFileDialog.askopenfilenames</code>，如下：</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2012-12-26</span>&raquo; <h3 class='title'><a href="/python/2012/12/26/Python3.x%E4%B8%AD%E7%9A%84nonlocal%E5%8F%8A%E5%85%B6%E5%9C%A82.x%E4%B8%AD%E7%9A%84%E5%8F%98%E9%80%9A%E5%8A%9E%E6%B3%95">Python 3.x中的nonlocal及其在2.x中的变通办法</a></h3>
+        <div class='excerpt'><p>在Python 2.x中，函数内部可以定义函数，内层的函数可以读取外层函数的局部变量，但却不可以修改它.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2012-12-18</span>&raquo; <h3 class='title'><a href="/python/2012/12/18/%E5%9C%A8Windows%E4%B8%8B%E5%AE%89%E8%A3%85pygraphviz">在Windows下安装pygraphviz</a></h3>
+        <div class='excerpt'><p>用 pip 或是 easy_install 在Windows 下安装 pygraphviz，
 会出现<code>OSError: Error locating graphviz.</code>的错误。
 解决方法如下：</p>
-</p>
+</div>
     </li>
   
-    <li>
-        <span>2012-12-18</span>
-         &raquo; <a href="/python/2012/12/18/%E5%9C%A8PyGraphviz%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87">在 PyGraphviz 中使用中文</a>
-        <p><p>在 PyGraphviz 使用中文要注意的：</p>
-</p>
+    <li><hr>
+        <span class='date'>2012-12-18</span>&raquo; <h3 class='title'><a href="/python/2012/12/18/%E5%9C%A8PyGraphviz%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87">在 PyGraphviz 中使用中文</a></h3>
+        <div class='excerpt'><p>在 PyGraphviz 使用中文要注意的：</p>
+</div>
     </li>
   
-    <li>
-        <span>2012-12-12</span>
-         &raquo; <a href="/python/2012/12/12/%E7%94%A8Python%E8%A7%A3%E6%9E%90HTML%2CBeautifulSoup%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B">用Python解析HTML，BeautifulSoup使用简介</a>
-        <p><p>Beautiful Soup是一个用于解析HTML文件的Python库，这里介绍一下它的基本使用方法。</p>
-</p>
+    <li><hr>
+        <span class='date'>2012-12-12</span>&raquo; <h3 class='title'><a href="/python/2012/12/12/%E7%94%A8Python%E8%A7%A3%E6%9E%90HTML%2CBeautifulSoup%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B">用Python解析HTML，BeautifulSoup使用简介</a></h3>
+        <div class='excerpt'><p>Beautiful Soup是一个用于解析HTML文件的Python库，这里介绍一下它的基本使用方法。</p>
+</div>
     </li>
   
 </ul>

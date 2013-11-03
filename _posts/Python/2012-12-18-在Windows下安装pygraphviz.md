@@ -18,28 +18,37 @@ title: 在Windows下安装pygraphviz
 
 找到
 
+```py
     library_path=
     include_path=
+```
 
 修改为
 
+```py
     library_path=r"C:\Program Files\Graphviz 2.28\lib\release\lib"
     include_path=r"C:\Program Files\Graphviz 2.28\include\graphviz"
-
+```
 
 其中 `C:\Program Files\Graphviz 2.28` 改为 Graphviz 的安装地址。
 
 1.  修改 agraph.py , 在函数 `def_run_prog` 中找到:
 
-    `cmd=' '.join([runprog,args])`
+```py
+    cmd=' '.join([runprog,args])
+```
 
 修改为：
 
-    `cmd=' '.join(['"%s"' % runprog,args])`
+```py
+    cmd=' '.join(['"%s"' % runprog,args])
+```
 
 1.  在命令行中执行
 
-    `setup.py install`
+```py
+    setup.py install
+```
 
 安装完成。
 

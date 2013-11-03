@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8">
     <title>cnDenis的笔记</title>
@@ -17,8 +17,8 @@
 
     <!-- Le styles -->
     <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
+    <link href="/assets/themes/twitter/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/default.css" rel="stylesheet" type="text/css" media="all">
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -34,9 +34,9 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
+    <div class="container-fullwidth">
+      <div class="navbar">
+        <div class="navbar-inner">
           <a class="brand" href="/">cnDenis的笔记</a>
           <ul class="nav">
             
@@ -100,11 +100,10 @@
         </div>
       </div>
     </div>
-
-    <div class="container-narrow">
-
-      <div class="content">
-        
+    <div class="container-fullwidth">
+      <div class="container-narrow">
+        <div class="content">
+          
 <div class="page-header">
   <h1>cnDenis的笔记 </h1>
 </div>
@@ -112,6 +111,61 @@
 <div class="row-fluid">
   <div class="span12">
     <ul class="post-list">
+  
+    <li><hr>
+        <span class='date'>2013-11-03</span>&raquo; <h3 class='title'><a href="/web/2013/11/03/%E5%9C%A8Markdown%E9%87%8C%E6%94%BEJavaScript%E4%BB%A3%E7%A0%81">在Markdown里放JavaScript代码</a></h3>
+        <div class='excerpt'><p>MarkDown里是可以直接放HTML标签的, 也可以放<code>&lt;script&gt;</code>, 但是要注意的是,
+<code>&lt;script&gt;</code> 前要空一行, 这样才不会被当成文本.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-11-03</span>&raquo; <h3 class='title'><a href="/web/2013/11/03/%E5%9C%A8Jekyll%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%AE%9E%E7%8E%B0%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE">在Jekyll的博客中实现语法高亮</a></h3>
+        <div class='excerpt'><p>在Jekyll的博客中实现语法高亮方法如下:</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-11-03</span>&raquo; <h3 class='title'><a href="/web/2013/11/03/%E4%BD%BF%E7%94%A8jqPlot%E7%BB%98%E5%88%B6%E7%BB%9F%E8%AE%A1%E5%9B%BE">使用jqPlot绘制统计图</a></h3>
+        <div class='excerpt'><p>要在网页上显示统计图, 可以在服务器生成图片后发给浏览器, 也可以把数据发给浏览器,
+用JavaScript画. <a href="http://www.jqplot.com/">jqPlot</a>是后者的一种, 它是jQuery的一个插件,
+是完全运行于客户端的绘图包. 下面简介一下它的使用.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-10-30</span>&raquo; <h3 class='title'><a href="/web/2013/10/30/PHP%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7">雷人的PHP的运算符优先级</a></h3>
+        <div class='excerpt'><p>PHP中的运算符优先级, 比较运算符高于位运算符, 赋值运算符高于部分逻辑运算符,
+真是坑啊.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-10-30</span>&raquo; <h3 class='title'><a href="/web/2013/10/30/MySQL%E4%B8%ADREPLACE%E4%B8%8EINSERT_ON_DUPLICATE_KEY_UPDATE%E7%9A%84%E5%8C%BA%E5%88%AB">MySQL中 REPLACE 与 INSERT ON DUPLICATE KEY UPDATE 的区别</a></h3>
+        <div class='excerpt'><p>MySQL中, 要一步实现 &quot;如果没有则插入, 如果存在则替换&quot; 这样的操作, 有两种方式,
+<code>REPLACE</code> 和 <code>INSERT ... ON DUPLICATE KEY UPDATE</code>. 这两种方法是有区别的.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-10-29</span>&raquo; <h3 class='title'><a href="/erlang/2013/10/29/Erlang%E4%B8%ADIPv4%E5%9C%B0%E5%9D%80%E4%B8%8E%E6%95%B4%E6%95%B0%E7%9A%84%E8%BD%AC%E6%8D%A2">Erlang中IPv4地址与整数的转换</a></h3>
+        <div class='excerpt'><p>IPv4地址通常表示为 A.B.C.D, 其中A-D都是0-255之间的整数, 总长为32位, 因此,
+可以使用单一个32位无符号整数表示一个IP地址.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-10-24</span>&raquo; <h3 class='title'><a href="/erlang/2013/10/24/Erlang%E7%9A%84%E5%A4%A7%E5%B0%8F%E6%AF%94%E8%BE%83">Erlang的大小比较</a></h3>
+        <div class='excerpt'><p>Erlang 里, 不只数字可以比较大小, 基本上所有变量都可以比较大小.</p>
+</div>
+    </li>
+  
+    <li><hr>
+        <span class='date'>2013-09-17</span>&raquo; <h3 class='title'><a href="/network/2013/09/17/%E5%8E%BB%E9%99%A4disqus%E5%B9%BF%E5%91%8A">去除disqus的广告</a></h3>
+        <div class='excerpt'><p><a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a> 自带了<a href="https://disqus.com/">Disqus</a>支持,
+但Disqus默认自带广告, 看起来有点不爽. Google了一下找到去除广告方法:</p>
+</div>
+    </li>
   
     <li><hr>
         <span class='date'>2013-08-01</span>&raquo; <h3 class='title'><a href="/erlang/2013/08/01/Erlang%E7%9A%84%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5">Erlang的静态代码检查</a></h3>
@@ -224,7 +278,19 @@
 </div>
 
 
+        </div>
       </div>
+      <div class="container-side">
+        <div class="side">
+          <div class="avatar">
+            <img src="http://gravatar.com/avatar/8373fc5c4d82aeba56db52f7317ab48d?s=160" alt="头像">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fullwidth">
       <hr>
       <footer>
         <p>&copy; 2013 cnDenis
@@ -232,9 +298,7 @@
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
-
     </div>
-
     
   </body>
 </html>

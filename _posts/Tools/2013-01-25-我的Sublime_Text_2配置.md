@@ -9,20 +9,24 @@ update: 2013-9-12
 
 Sublime Text 2是最近很火的一个代码编辑器，我也跟风玩了一下，果然很好用。方便的插件管理器加上丰富的插件，可以很容易把它调教得很顺手。几乎每项功能都可以用鼠标和键盘两种方式来实现，方便各种习惯的人。Sublime Text 2 的介绍与推荐网上已经有很多，这里记一下我安装的包和配置。
 
-<strike>
-[Package Control](http://wbond.net/sublime_packages/package_control)
 
+[Package Control](http://wbond.net/sublime_packages/package_control)
+*(因为这东西在后台更新曾经导致我的Sublime完全崩溃, 已经弃用)*
+
+<strike>
 包管理器是必备的，新下载的Sublime Text 2 第一个装的肯定是这个，有了它，装其他的包就很方便了。
 
 安装方式有两种，第一种是在线下载安装：在 Sublime Text 2 中按下`` ctrl+` ``（就是大键盘数字1左边的那个键），拷贝以下命令到窗口下部的终端中，
 
+```py
     import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
+```
 
 回车运行，重启 Sublime Text 2，即可。另一种方法是手动安装，看[这里](http://wbond.net/sublime_packages/package_control/installation)，个人觉得不太必要，在没有网络的环境下，包管理器也没什么用了。
 
 在安装完包管理器之后，只要按下`ctrl+shift+p`，输入`ip`，选择“Package Control: Install Package”，然后输入要安装的包的名称，就可以在线安装了。
 </strike>
-(因为这东西在后台更新曾经导致我的Sublime完全崩溃, 已经弃用)
+
 
 2. [Soda](https://github.com/buymeasoda/soda-theme/)
 
@@ -122,14 +126,17 @@ Sublime Text 2 我最常用快捷键是以下几个：
 
 Sublime Text 2 的配置文件的修改可以参考[Sublime Text 2 设置文件详解](http://www.feelcss.com/sublime-text-2-settings.html)。默认其实已经挺好，我是在`Preferences` -> `Setting User`加了这几行：
 
+```json
     "default_line_ending": "unix",
     "rulers":[78],
     "translate_tabs_to_spaces": true
+```
 
 分别是用来设定行尾换行符、显示长行标尺和按tab输出空格。
 
 另外有一个很实用的设置，在括号中使用Enter跳出括号，在`Preferences` -> `Key Bindings User`中加上
 
+```json
     [
         {"keys": ["enter"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
             [
@@ -139,6 +146,7 @@ Sublime Text 2 的配置文件的修改可以参考[Sublime Text 2 设置文件�
             ]
         }
     ]
+```
 
 暂时先这么多，以后再补充吧。
 

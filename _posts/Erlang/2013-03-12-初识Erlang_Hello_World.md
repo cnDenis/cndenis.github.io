@@ -21,22 +21,27 @@ PATH，然后打开命令行，输入`erl`，如果看到类似于
 
 随便用一个文本编辑器输入：
 
+```erlang
     -module(helloworld).
     -export([hw/0]).
 
     hw() -> io:format("Hello World! ~n").
+```
 
 保存为helloworld.erl，然后在命令行下进入该文件所在目录，进入Erlang Shell，输
 入`>`后的命令：
 
+```erl
     1> c(helloworld).
     {ok,helloworld}
     2> helloworld:hw().
     Hello World!
     ok
+```
 
 Yeah，Hello World完成！（我会告诉你我用了20分钟干这事么，下面是各种坑的介绍）
 
+```erlang
     % 首先，Erlang的注释符是百分号哦
     -module(helloworld).
     % -module是必要的，这可不是Bash或Python，上来就可以Echo或Print
@@ -63,6 +68,7 @@ Yeah，Hello World完成！（我会告诉你我用了20分钟干这事么，下
     % 双引号中是字符串，Erlang中的字符串实质上是数组
     % ~n是换行，用波浪线转义
     % 最后还是别忘记了是句点
+```
 
 这个erl文件的坑说完了，然后是Erlang Shell中的。
 

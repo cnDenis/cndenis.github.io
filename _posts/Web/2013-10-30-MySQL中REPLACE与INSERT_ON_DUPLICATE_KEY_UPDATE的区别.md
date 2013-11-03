@@ -19,12 +19,12 @@ MySQL中, 要一步实现 "如果没有则插入, 如果存在则替换" 这样�
 `REPLACE` 的语法示例如下:
 
 ```sql
-REPLACE INTO
-  ratings
-SET
-  quote_id = 100,
-  user_id = 200,
-  score = 10
+    REPLACE INTO
+      ratings
+    SET
+      quote_id = 100,
+      user_id = 200,
+      score = 10
 ```
 
 `INSERT ... ON DUPLICATE KEY UPDATE` 进行的操作是, 如果存在重复的主键值,
@@ -34,14 +34,14 @@ SET
 示例如下:
 
 ```sql
-INSERT INTO
-  ratings
-SET
-  quote_id = 100,
-  user_id = 200,
-  score = 10
-ON DUPLICATE KEY UPDATE
-  score = 10
+    INSERT INTO
+      ratings
+    SET
+      quote_id = 100,
+      user_id = 200,
+      score = 10
+    ON DUPLICATE KEY UPDATE
+      score = 10
 ```
 
 本文参考了:

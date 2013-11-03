@@ -30,6 +30,7 @@ gen_server是erlang的OTP框架中最常用的“行为模式”了吧，至少�
 
 gen_server是可以使用模板来写的，如下：
 
+```erlang
     -module().
 
     -behaviour(gen_server).
@@ -63,6 +64,7 @@ gen_server是可以使用模板来写的，如下：
 
     code_change(_OldVsn, State, _Extra) ->
         {ok, State}.
+```
 
 含义如下：
 

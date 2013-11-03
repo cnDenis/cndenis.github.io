@@ -17,10 +17,12 @@ Beautiful Soup字面意思是美好的汤，主页在 <http://www.crummy.com/sof
 
 首先要把待解析的HTML装入BeautifulSoup。BeautifulSoup可以接受文件句柄或是字符串作为输入：
 
+```python
     from bs4 import BeautifulSoup
     fp = open("index.html")
     soup1 = BeautifulSoup(fp)
     soup2 = BeautifulSoup("<html>data</html>")
+```
 
 ------------
 
@@ -29,30 +31,40 @@ Beautiful Soup字面意思是美好的汤，主页在 <http://www.crummy.com/sof
 ### 标签（Tag）
 标签对应于HTML元素，也就是应于一对HTML标签以及括起来的内容（包括内层标签和文本），如：
 
+```python
     soup = BeautifulSoup('<b class="boldest">Extremely bold</b>')
     tag = soup.b
+```
 
 soup.b就是一个标签，soup其实也可以视为是一个标签，其实整个HTML就是由一层套一层的标签组成的。
 
 ### 名字（Name）
 名字对应于HTML标签中的名字（也就是尖括号里的第一项）。每个标签都具有名字，标签的名字使用`.name`来访问，例如上例中，
 
+```python
     tag.name == u'b'
-    soup.name == u'[document]'。
+    soup.name == u'[document]'
+```
 
 ### 属性（Atrriutes）
 属性对应于HTML标签中的属性部分（也就是尖括号里带等号的那些）。标签可以有许多属性，也可以没有属性。属性使用类似于字典的形式访问，用方括号加属性名，例如上例中，
 
+```python
     tag['class'] ==  u'boldest'
+```
 
 可以使用.attrs直接获得这个字典，例如，
 
+```python
     tag.attrs == {u'class': u'boldest'}
+```
 
 ### 文本（Text）
 文本对应于HTML中的文本（也就是尖括号外的部分）。文件使用`.text`来访问，例如上例中，
 
+```python
     tag.text ==  u'Extremely bold'
+```
 
 ------------
 
@@ -60,8 +72,10 @@ soup.b就是一个标签，soup其实也可以视为是一个标签，其实整�
 
 解析一个HTML通常是为了找到感兴趣的部分，并提取出来。BeautifulSoup提供了`find`和`find_all`的方法进行查找。`find`只返回找到的第一个标签，而`find_all`则返回一个列表。因为查找用得很多，所以BeautifulSoup做了一些很方便的简化的使用方式：
 
+```python
     tag.find_all("a")  #等价于 tag("a")
     tag.find("a") #等价于 tag.a
+```
 
 因为找不到的话，find_all返回空列表，`find`返回`None`，而不会抛出异常，所以，也不用担心 `tag("a")` 或 `tag.a` 会因为找不到而报错。限于python的语法对变量名的规定，`tag.a` 的形式只能是按名字查找，因为点号.后面只能接变量名，而带括号的形式 `tag()` 或 `tag.find()` 则可用于以下的各种查找方式。
 

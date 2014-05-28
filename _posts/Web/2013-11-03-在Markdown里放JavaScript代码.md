@@ -2,7 +2,7 @@
 layout: post
 category : Web
 tagline:
-tags : [JavaScript, jqPlot]
+tags : [JavaScript, Markdwon]
 title: 在Markdown里放JavaScript代码
 ---
 

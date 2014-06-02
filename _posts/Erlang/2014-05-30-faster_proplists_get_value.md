@@ -9,14 +9,14 @@ title: 【Erl代码片段】更快的proplists:get_value/3
 在cowboy的[cowboy_protocol.erl](https://github.com/extend/cowboy/blob/master/src/cowboy_protocol.erl)
 文件中看到如这样一下函数:
 
-    ```erlang
-    %% Faster alternative to proplists:get_value/3.
-    get_value(Key, Opts, Default) ->
-        case lists:keyfind(Key, 1, Opts) of
-            {_, Value} -> Value;
-            _ -> Default
-        end.
-    ```
+```erlang
+%% Faster alternative to proplists:get_value/3.
+get_value(Key, Opts, Default) ->
+    case lists:keyfind(Key, 1, Opts) of
+        {_, Value} -> Value;
+        _ -> Default
+    end.
+```
 
 做了一下测试, 考虑到proplist一般都不长, 用一个10个元素的列表进行测试,
 结果这个函数比 `proplists:get_value/3` 快5倍, 对于更长的列表差别更大.

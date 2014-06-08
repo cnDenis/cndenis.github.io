@@ -2,7 +2,7 @@
 layout: post
 category : Erlang
 tagline:
-tags : [Erlang, ets, 并发]
+tags : [Erlang, gen_server]
 title: 【Erlang】gen_server terminate的坑
 ---
 

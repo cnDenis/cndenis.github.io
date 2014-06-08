@@ -15,7 +15,9 @@
     <div class="content">
       {{ content }}
     </div>
-
+    <div class="permanent-link">
+      本文链接: <a href="{{page.url}}">{{site.production_url}}{{page.url}}</a>
+    </div>
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

@@ -6,7 +6,7 @@ tags : [Erlang, supervisor, OTP]
 title: OTP监控树笔记
 ---
 
-这是Learn You Some Erlang中的[Building an Applications with Otp](http://learnyousomeerlang.com/building-applications-with-otp#a-pool-of-processes)的笔记.
+这是Learn You Some Erlang中的[Building an Applications with Otp](http://learnyousomeerlang.com/building-applications-with-otp)的笔记.
 
 在文中, OTP被戏称为Onion Theory Platform, 监控树像洋葱一样, 一层又一层.
 
